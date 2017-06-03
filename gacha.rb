@@ -1,11 +1,13 @@
 # coding: utf-8
 ramdom = Random.new
 
+# ガチャ
+
 print "先生10連ガチャ\n"
 
 for num in 0..10 do
   if ramdom.rand(0..100) == 0 then
-    print"UR : 堀川\n" 
+    print"UR : 堀川\n"
   elsif ramdom.rand(0..100) < 2 then
     print "SSR : "
     if ramdom.rand(0..1) == 0 then
@@ -35,9 +37,9 @@ for num in 0..10 do
     elsif ramdom.rand(0..5) == 3 then
       print "朝野\n"
     elsif ramdom.rand(0..5) == 4 then
-      print "井面先生\n" 
+      print "井面先生\n"
     else
       print "奥村\n"
     end
-  end  
+  end
 end
